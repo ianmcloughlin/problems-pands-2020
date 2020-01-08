@@ -1,5 +1,5 @@
-# Problem set 2019: Programming and Scripting
-This is the problem set for the module **Programming and Scripting** in 2019.
+# Problem set 2020: Programming and Scripting
+This is the problem set for the module **Programming and Scripting**.
 The module is taught to students at [GMIT](http://www.gmit.ie).
 The lecturer is [Ian McLoughlin](https://ianmcloughlin.github.io).
 
