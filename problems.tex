@@ -83,11 +83,11 @@
   % Name of the module.
   \newcommand{\modulename}{Programming and Scripting}
   % Year of delivery.
-  \newcommand{\projectyear}{2019}
+  \newcommand{\projectyear}{2020}
   % Title of project.
-  \newcommand{\projectname}{Problem Set \projectyear}
+  \newcommand{\projectname}{Problems \projectyear}
   % Due date.
-  \newcommand{\duedate}{last commit on or before March 31\textsuperscript{st}}
+  \newcommand{\duedate}{last commit on or before April 3\textsuperscript{rd} 2020}
   %%%%%%
 
   % Change the displayed name of the references section.
@@ -113,24 +113,24 @@
 
 \noindent
 This document contains the instructions for \projectname{} for \modulename{}.
-The ten problems below should be completed by you during the semester.
 The lecturer will indicate which problems you should solve on different weeks.
 Your solutions will be assessed towards the end of the semester and will be worth 50\% of your marks for this module.
 
-The marking scheme is given below, and please note that one of the categories is for a pragmatic attitude to work, part of which involves working on the exercises as indicated by the lecturer during the weeks of the semester.
+The marking scheme is given below, and please note that one of the categories is for a pragmatic attitude to work.
+This involves working on the exercises throughout the semester.
 It is not expected that you get every program right first time.
 So long as an attempt is made when indicated by the lecturer, this will count as a good approach.
 It is important that you keep working on any incomplete problems until the deadline.
 
-Please note that all students are bound by the Quality Assurance Framework~\cite{gmitqaf} at GMIT which includes the Code of Student Conduct and the Policy on Plagiarism.
+Please note that all students are bound by the Quality Framework~\cite{gmitqaf} at GMIT which includes the Code of Student Conduct and the Policy on Plagiarism.
 The onus is on the student to ensure they do not, even inadvertently, break the rules.
 A clean and comprehensive git~\cite{git} history (see below) is the best way to demonstrate that your submission is your own work.
 It is, however, expected that you draw on works that are not your own and you should systematically reference those works to enhance your submission.
 
-\subsection*{How to submit}
+\section*{How to submit}
 During the semester you will learn how to use the version control software git~\cite{git} to track your work.
 You will sync your work with GitHub~\cite{github} (you may use another provider if you wish) and provide the URL to your GitHub repository using the submission form on the Moodle page.
-You should consult the videos on the Moodle page for information on how to do this.
+You should consult the Moodle page for information on how to do this.
 
 I suggest you consider making your repository publicly available (the default) so that prospective employers may view it.
 Should you wish to, you may make it private so long as you make it available to the lecturer.
@@ -138,7 +138,7 @@ You can submit your URL at any time as git will track what work was done before 
 In general, only work completed before the deadline will count.
 However, in borderline cases or exceptional circumstances work done after the deadline may be considered, with or without penalty.
 
-\subsection*{Marking scheme}
+\section*{Marking scheme}
   This problem set will be worth 50\% of your marks for this module.
   The following marking scheme will be used to mark your submission out of 100\%.
   The examiner's overall impression of the assignment may influence marks in each individual component.
@@ -157,7 +157,7 @@ However, in borderline cases or exceptional circumstances work done after the de
     \end{tabular}
   \end{center}
 
-  \subsection*{Advice for students}
+  \section*{Advice for students}
   \begin{itemize}
     \item
       You must be able to explain your assignment during and after its completion.
@@ -178,49 +178,40 @@ However, in borderline cases or exceptional circumstances work done after the de
   \end{itemize}
 
 
-  \bibliographystyle{plain}
-  \bibliography{bibliography}
 
-
-\subsection*{Questions}
+\section*{Questions}
   
   For some some of the following questions, examples of running the program are given in grey.
   Lines beginning with a dollar sign are typed at the command line, and the other lines are part of the programs.
 
   \begin{questions}
 
-    \question
-    Write a program that asks the user to input any positive integer and outputs the sum of all numbers between one and that number.
-    \begin{minted}{bash}
-$ python sumupto.py
-Please enter a positive integer: 10
-55
-    \end{minted}
 
     \question
-      Write a program that outputs whether or not today is a day that begins with the letter T.
+    Create a GitHub account and create a new repository in GitHub to contain the programs you will write for this problem sheet.
+    Add a README, gitignore, and a license to your repository.
+    Then add a program that just prints ``Hello, world!'' to the screen when run.
+    Finally, submit the GitHub repository using the form on the Moodle page.
+    \begin{minted}{bash}
+$ python hello-world.py
+Hello, world!
+    \end{minted}
+
+
+    \question
+      Write a program that outputs whether or not today is a weekday.
       An example of running this program on a Thursday is as follows.
     \begin{minted}{bash}
-$ python begins-with-t.py
-Yes - today begins with a T.
+$ python weekday.py
+Yes, unfortunately today is a weekday.
     \end{minted}
-      An example of running it on a Wednesday is as follows.
+      An example of running it on a Saturday is as follows.
       \begin{minted}{bash}
-$ python begins-with-t.py
-No - today does not begin with a T.
+$ python weekday.py
+It is the weekend, yay!
       \end{minted}
 
 
-      \question
-      Write a program that prints all numbers between 1,000 and 10,000 that are divisible by 6 but not 12.
-      \begin{minted}{bash}
-$ python divisors.py
-1002
-1014
-1026
-etc
-9990
-      \end{minted}
 
     \question
       Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
@@ -232,23 +223,13 @@ Please enter a positive integer: 10
 10 5 16 8 4 2 1
       \end{minted}
 
-    \newpage
-
-
-    \question
-    Write a program that asks the user to input a positive integer and tells the user whether or not the number is a prime.
-    \begin{minted}{bash}
-$ python primes.py
-Please enter a positive integer: 19
-That is a prime.
-    \end{minted}
     
     \question
-    Write a program that takes a user input string and outputs every second word.
+    Write a program that takes asks a user to input a string and outputs every second letter in reverse order.
     \begin{minted}{bash}
 $ python secondstring.py
 Please enter a sentence: The quick brown fox jumps over the lazy dog.
-The brown jumps the dog
+.o zletrv pu o wr cu h
     \end{minted}
 
     \question
@@ -262,25 +243,25 @@ The square root of 14.5 is approx. 3.8.
     \question
     Write a program that outputs today's date and time in the format ``Monday, January 10th 2019 at 1:15pm''.
     \begin{minted}{bash}
-$ python datetime.py
+$ python whenisit.py
 Monday, January 10th 2019 at 1:15pm
     \end{minted}
 
     \question
-    Write a program that reads in a text file and outputs every second line.
+    Write a program that reads in a text file and outputs the number of e's it contains.
     The program should take the filename from an argument on the command line.
     \begin{minted}{bash}
-$ python second.py moby-dick.txt
-Title:  Moby Dick; or The Whale
-CHAPTER 1
-Call me Ishmael.  Some years ago--never mind how long
-particular to interest me on shore, I thought I would sail about a
-...
-    \end{minted}
+$ python es.py moby-dick.txt
+116960
+\end{minted}
 
     \question
-    Write a program that displays a plot of the functions $x$, $x^2$ and $2^x$ in the range $[0, 4]$.
+    Write a program that displays a plot of the functions $f(x)=x$, $g(x)=x^2$ and $h(x)=x^3$ in the range $[0, 4]$ on the one set of axes.
 
   \end{questions}
+
+
+  \bibliographystyle{plain}
+  \bibliography{bibliography}
 
 \end{document}
